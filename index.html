@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/up-arrow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+    <div class="container header-inner">
+        <div class="logo">
+            <a href="#">
+                <img src="./img/logo.svg" alt="logo picture" class="logo__img">
+            </a>
+        </div>
+        <ul class="header_links" id="header_links">
+            <li><a href="./index.html">главная</a></li>
+            <li><a href="./menu-page/menu.html">меню</a></li>
+            <li><a href="#" class="delivery-link">доставка</a></li>
+            <li><a href="#" id="contact-link">контакты</a></li>
+            <li><a href="#" id="discount-link">акции</a></li>
+        </ul>
+        <div class="contact">
+            <img src="./img/tel.svg" alt="tel" class="phone-icon">
+            <a href="tel:+70001234567" class="contact--tel">
+                +7 (000)123 45 67
+            </a>
+            <a href="#">
+                <img src="./img/header/instagram.svg" alt="instagram">
+            </a>
+            <a href="#">
+                <img src="./img/header/facebook.svg" alt="facebook">
+            </a>
+            <a href="#">
+                <img src="./img/header/twiter.svg" alt="twiter">
+            </a>
+        </div>
+        <div class="bar__holder" id="bar__holder">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    </header>
+    <main>
+        <section class="info">
+            <div class="container">
+                <div class="info__inner">
+                    <p class="info__title">
+                        Попробуй лучшую <span>грузинскую</span> кухню в Москве.
+                    </p>
+                    <p class="info__text">
+                        В нашем ресторане Вы найдете лучшие блюда приготвленные по старинным рецептам грузинской кухни. 
+                        Потрясающий вкус блюд перенесет Вас к атмосферу невероятного Тбилисси не выходя из дома. 
+                    </p>
+                    <a class="button info__btn" href="./menu-page/menu.html">
+                        ПЕРЕЙТИ К МЕНЮ
+                    </a>
+                </div>
+            </div>
+            <img class="info__decoration" src="./img/up__tomato.png" alt="a photo of a tomato">
+        </section>
+        <section class="delivery">
+            <div class="container">
+                <div class="delivery__inner">
+                    <p class="title delivery__title">
+                        Попробуйте на вкус
+                    </p>
+                    <p class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.
+                    </p>
+                    <div class="delivery__items">
+                        <div class="delivery__item">
+                            <img src="./img/delivery/basil_small.png" alt="basil" class="delivery__item--decoration decoration">
+                            <img src="./img/delivery/delivery_1.png" alt="dish photo" class="delivery__item--img increased">
+                            <p class="delivery__item--text">
+                                Здесь будет какой то текст, возможно назване блюда
+                            </p>
+                        </div>
+                        <div class="delivery__item">
+                            <img src="./img/delivery/delivery_2.png" alt="dish photo" class="delivery__item--img">
+                            <p class="delivery__item--text">
+                                Здесь будет какой то текст, возможно назване блюда
+                            </p>
+                        </div>
+                        <div class="delivery__item">
+                            <img src="./img/delivery/delivery_3.png" alt="dish photo"  class="delivery__item--img">
+                            <p class="delivery__item--text">
+                                Здесь будет какой то текст, возможно назване блюда
+                            </p>
+                        </div>
+                    </div>
+                    <button class="button delivery-link">
+                        ПЕРЕЙТИ К ДОСТАВКЕ
+                    </button>
+                </div>
+            </div>
+            <img src="./img/delivery/basil_big.png" alt="basil"class="delivery__decoration decoration">
+        </section>
+        <section class="menu">
+            <div class="container">
+                <p class="title menu__title">
+                    Меню
+                </p>
+                <p class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.
+                </p>
+            </div>
+                <div class="menu__slider" id="menu__slider">
+                    <div class="menu__slider--line" id="menu__slider--line">
+                    </div>
+                    <div class="container menu__slider--btns" id="slider__btns">
+                        <button class="menu__slider--btn" id="slider__btn--prev">
+                            <
+                        </button>
+                        <button class="menu__slider--btn" id="slider__btn--next">
+                            >
+                        </button>
+                    </div>
+                </div>
+        </section>
+        <section class="means" id="means">
+            <div class="container">
+                <div class="means__inner">
+                    <p class="title means__title">
+                        Удобные способы доставки
+                    </p>
+                    <p class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.
+                    </p>
+                    <div class="means__kinds">
+                        <div>
+                            <div class="means__kind--item">
+                               <img src="./img/delivery__means/means__1.svg" alt="logo" class="means__kind--item-img">
+                               <p class="means__kind--item-text">
+                                    Доставка при помощи наших курьеров при заказе от 2000 ₽
+                               </p>
+                            </div>
+                            <div class="means__kind--item">
+                                <img src="./img/delivery__means/means__2.svg" alt="service logo" class="means__kind--item-img">
+                                <p class="means__kind--item-text">
+                                    Доставка при помощи сервиса по оставке еды и лальше по тексту
+                                </p>
+                             </div>
+                             <div class="means__kind--item">
+                                <img src="./img/delivery__means/means__3.svg" alt="delivery club logo" class="means__kind--item-img">
+                                <p class="means__kind--item-text">
+                                    Доставка при помощи сервиса по оставке еды и лальше по тексту
+                                </p>
+                             </div>
+                        </div>
+                        <div class="means__kinds--photo">
+                            <img src="./img/delivery__means/peacture.png" alt="photo of dishes" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/delivery__means/basil__small.png" alt="basil" class="means__decoration--1 decoration"></img>
+            <img src="./img/delivery__means/basil__big.png" alt="basil" class="means__decoration--2 decoration"></img>
+            <img src="./img/delivery__means/tomato.svg" alt="tomato" class="means__decoration--3 decoration"></img>
+        </section>
+        <section class="dishes">
+            <div class="dishes__slider" id="dishes__slider"> </div>
+            <div class="dishes__slider--dots" id="dishes__slider--dots"></div>
+        </section>
+    </main>
+    <section class="up-arrow" id="up-arrow">
+        <i class="fas fa-arrow-up up-arrow__icon"></i>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__upper">
+            <div class="footer__upper--item">
+                <img src="./img/logo.svg" alt="logo" class="logo">
+            </div>
+            <div class="footer__upper--item contact">
+                <img src="./img/tel.svg" alt="tel" class="phone-icon">
+                <a href="tel:+71234569998" class="contact--tel">+7 (123) 456-99-98</a>
+                <img src="./img/footer/telegram 1.svg" alt="telegram">
+                <img src="./img/footer/viber-mob 1.svg" alt="viber">
+                <img src="./img/footer/whatsapp-mob 1.svg" alt="whatsapp">
+            </div>
+            <div class="footer__upper--item">
+                <p class="footer__upper--text footer__address">
+                    г.Одесса
+                </p>
+            </div>
+            <div class="footer__upper--item">
+                <a href="mailto:mail@mal.ru" class="footer__upper--text">Email: mail@mal.ru</a>
+            </div>
+        </div>
+        <div class="footer__lower">
+            <div class="footer__lower--item">
+                <a href="#" class="footer__lower--text">
+                    Политика конфиденциальности
+                </a>
+                <a href="#" class="footer__lower--text">
+                    Пользовательское соглашение
+                </a>
+            </div>
+            <div class="footer__lower--item">
+                <p class="footer__lower--text">
+                    Динамо. Грузинское бистро. Все права защищены, 2021
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script type="module" src="./script/script.js"></script>
+</body>
+</html>

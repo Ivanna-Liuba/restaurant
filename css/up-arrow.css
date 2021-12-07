@@ -1,0 +1,18 @@
+.up-arrow {
+    display: none;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    border-radius: 50%;
+    background-color: #B82121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.323);
+    color: #fff;
+    
+}
+.shown {
+    position: fixed;
+}

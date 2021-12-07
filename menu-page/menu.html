@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/up-arrow.css">
+    <link rel="stylesheet" href="./menu-css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Меню</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="#">
+                    <img src="../img/logo.svg" alt="logo picture" class="logo__img">
+                </a>
+            </div>
+            <ul class="header_links" id="header_links">
+                <li><a href="../index.html">главная</a></li>
+                <li><a href="#" id="menu-link">меню</a></li>
+            </ul>
+            <div class="contact">
+                <img src="../img/tel.svg" alt="tel">
+                <a href="tel:+70001234567" class="contact--tel">
+                    +7 (000)123 45 67
+                </a>
+                <a href="#">
+                    <img src="../img/header/instagram.svg" alt="instagram">
+                </a>
+                <a href="#">
+                    <img src="../img/header/facebook.svg" alt="facebook">
+                </a>
+                <a href="#">
+                    <img src="../img/header/twiter.svg" alt="twiter">
+                </a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container menu__imgs menu__imgs--header" id="header__imgs">
+        </div>
+    </section>
+    <main>
+        <section class="cart hidden" id="cart">
+            <div class="cart__ico">
+                <i class="fas fa-cart-plus cart__icon" id="cart__icon"></i>
+            </div>
+            <div class="cart__elems" id="cart__elems"></div>
+            <p >Общая стоимость: <span class="cart__total" id="cart__total"></span> грн.</p>
+            <div class="cart__buttons">
+                <button class="cart__btn" id="cart__minimize">Уменьшить</button>
+                <button class="cart__btn cart__cancel" id="cart__cancel">Отменить заказ</button>
+                <button class="cart__btn" id="cart__order">Перейти к оформлению</button>
+            </div>
+        </section>
+        <section class="order container hidden" id="order">
+            <h1 class="order__title">
+                Оформление заказа
+            </h1>
+            <form action="#" class="order__form" id="order__form">
+                <div class="order__info-client">
+                    <div class="order__client order__block">
+                        <p class="order__form-title">Ваши данные</p>
+                        <div class="order__input-item">
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" class="must__be">
+                        </div>
+                        <div class="order__input-item">
+                            <label for="tel">Телефон</label>
+                            <input type="tel" name="tel" class="must__be">
+                        </div>
+                    </div>
+                    <div class="order__block">
+                        <div class="order__details">
+                            <p class="order__form-title">Доставка и оплата</p>
+                            <div class="order__input-item">
+                                <label for="city">Город</label>
+                                <input type="text" name="city" class="must__be">
+                            </div>
+                            <div class="order__details-time">
+                                <p class="order__form-subtitle">Выберите время доставки :</p>
+                                <div class="order__details-title">
+                                    <div class="order__payment-item order__radio" >
+                                        <input type="radio" name="time" id="time_set" value="БЛИЖАЙШЕЕ ВРЕМЯ">
+                                        <label for="time_set">БЛИЖАЙШЕЕ ВРЕМЯ</label>
+                                    </div>
+                                    <div class="order__details-item order__radio chosen">
+                                        <input type="radio" name="time" id="time_notset" value="КАК МОЖНО СКОРЕЕ" checked> 
+                                        <label for="time_notset">КАК МОЖНО СКОРЕЕ</label>
+                                    </div>
+                                </div>
+                                <div id="time__setted" class="hidden">
+                                    <div>
+                                        <input type="date" name="date" id="date">
+                                    </div>
+                                    <div class="order__set-time">
+                                        <label for="hour">Час</label>
+                                        <select name="hour" id="hour"></select>
+                                    </div>
+                                    <div class="order__set-time">
+                                        <label for="minute">Минуты</label>
+                                        <select name="minute" id="minute"></select>
+
+                                    </div>
+                                </div>
+                                <div id="time__unsetted"></div>
+                            </div>
+                            <div class="order__details-means">
+                                <p class="order__form-subtitle">Способ доставки :</p>
+                                <div class="order__details-title">
+                                    <div class="order__details-item order__radio chosen">
+                                        <input type="radio" name="delivery" id="onown" value="ЗАБРАТЬ САМОМУ" checked>
+                                        <label for="onown">ЗАБРАТЬ САМОМУ</label>
+                                    </div>
+                                    <div class="order__details-item order__radio">
+                                        <input type="radio" name="delivery" id="get__delivery" value="ДОСТАВКА КУРЬЕРОМ"> 
+                                        <label for="get__delivery">ДОСТАВКА КУРЬЕРОМ</label>
+                                    </div>
+                                </div>
+                                <ul class="order__address" id="order__address" >
+                                    <li  class="order__address-item">
+                                        <input type="radio" value="ул.Улица, д.1" name="delivery__address" id="address__1" checked>
+                                        <label for="address__1">
+                                            <p>ул.Улица, д.1</p>
+                                            <p>График работы: 9.00 - 23.30</p>
+                                        </label>
+                                    </li>
+                                    <li class="order__address-item">
+                                        <input type="radio" value="ул.Улица, д.1" name="delivery__address" id="address__2">
+                                        <label for="address__2">
+                                            <p>ул.Улица, д.2</p>
+                                            <p>График работы: 9.00 - 23.00</p>
+                                        </label>
+                                    </li>
+                                    <li class="order__address-item">
+                                        <input type="radio" value="ул.Улица, д.1" name="delivery__address" id="address__3">
+                                        <label for="address__3">
+                                            <p>ул.Улица, д.3</p>
+                                            <p>График работы: 9.00 - 21.30</p>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="order__carrier hidden" id="order__carrier">
+                                    <div class="order__grid">
+                                        <div class="order__input-item order__grid-address">
+                                            <label for="address">Адрес доставки</label>
+                                            <input type="text" name="address">
+                                        </div>
+                                        <div class="order__input-item order__grid-home">
+                                            <label for="home">№ дома</label>
+                                            <input type="text" name="home">
+                                        </div>
+                                        <div class="order__input-item order__grid-flat">
+                                            <label for="flat">№ кв./ офиса</label>
+                                            <input type="text" name="flat">
+                                        </div>
+                                        <div class="order__input-item order__grid-buzzer">
+                                            <label for="buzzer">Домофон</label>
+                                            <input type="text" name="buzzer">
+                                        </div>
+                                        <div class="order__input-item order__grid-floor">
+                                            <label for="floor">Этаж</label>
+                                            <input type="text" name="floor">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="private__home" checked>
+                                        <label for="private__home">Частный дом</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__details-payment">
+                                <p class="order__form-subtitle">Способ оплаты :</p>
+                                <div class="order__details-title">
+                                    <div class="order__payment-item order__radio chosen">
+                                        <input type="radio" name="pay" id="pay" value="НАЛИЧНЫМИ" checked>
+                                        <label for="pay">НАЛИЧНЫМИ</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="order__input-item">
+                                    <label for="pay__amount">Сдача с ...</label>
+                                    <input type="text" name="pay__amount" id="pay__amount">
+                                </div>
+                                <div class="order__input-item">
+                                    <label for="person">Количество персон</label>
+                                    <input type="text" name="person" id="person"> 
+                                </div>
+                            </div>
+                            <div class="order__radio">
+                                <input type="checkbox" name="massage" id="massage" value="message">
+                                <label for="massage">Оставить коментарий</label>
+                            </div>
+                            <textarea type="text" name="comment" id="comment" class="hidden"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__info-cart order__block">
+                    <div class="order__info-cart__ordered-list">
+                        <p class="order__cart-title">Ваш заказ</p>
+                        <div class="order__cart-list" id="order__cart-list"></div>
+                        <p class="order__cart-sum"></p>
+                        <p class="order__cart-delivery"></p>
+                        <p class="info__massage">Общая стоимость: <span id="order__cart-total"></span> грн.</p>
+                        <button class="order__form-submit" id="order__form-submit">Подтвердить заказ</button>
+                    </div>
+                    <div class="order__info-cart__massage hidden">
+                        <p class="info__massage">Ваш заказ успешно отправлен. Ждите звонка )</p>
+                        <p>*Этот сайт не подключен к серверу.</p>
+                        <p>Результат отправки формы смотрите в консоли.</p>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="container categories" id="categories">
+            <ul class="categories__list" id="categories__list">
+                <li data-category="coldCuts">Холодные закуски</li>
+                <li data-category="salad">Салаты</li>
+                <li data-category="pastry">Выпечка</li>
+                <li data-category="soup">Супы</li>
+                <li data-category="grill">Блюда на мангале</li>
+                <li data-category="hotDishes">Гарячие блюда</li>
+                <li data-category="sauce">Соусы</li>
+            </ul>
+        </section>
+        <section class="container dishes" id="dishes">
+            <p class="dishes__category" id="dishes__category"></p>
+            <div class="dishes__list" id="dishes__list"></div>
+        </section>
+    </main>
+    <section class="up-arrow" id="up-arrow">
+        <i class="fas fa-arrow-up up-arrow__icon"></i>
+    </section>
+    <footer>
+        <div class="container menu__imgs menu__imgs--footer" id="footer__imgs">
+        </div>
+    </footer>
+    <script type="module" src="./menu-script/script.js"></script>
+</body>
+</html>
